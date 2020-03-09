@@ -8,6 +8,7 @@
 		{
 			"port": 2333,
 			"protocol": "vmess",
+			"listen":"127.0.0.1",
 			"settings": {
 				"clients": [
 					{
@@ -18,7 +19,10 @@
 				]
 			},
 			"streamSettings": {
-				"network": "ws"
+				"network": "ws",
+				"wsSettings":{
+					"path":"/233blog"
+				}
 			},
 			"sniffing": {
 				"enabled": true,

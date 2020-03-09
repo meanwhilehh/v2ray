@@ -67,7 +67,6 @@ fi
 case $v2ray_transport in
 5)
 	sed -i "24s/233blog.com/$domain/" $v2ray_server_config
-4)
 	if [[ $is_path ]]; then
 		sed -i "26s/233blog/$path/" $v2ray_server_config
 	else
